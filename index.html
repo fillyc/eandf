@@ -1,0 +1,69 @@
+---
+layout: landing
+---
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>{{ site.title }}</h2>
+							<p>{{ site.description | markdownify }}</p>
+							<ul class="actions">
+								<li><a href="#" class="button special">Contact Us</a></li>
+							</ul>
+						</div>
+						<a href="#one" class="more scrolly">Read Our Stories</a>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>“The mountains are calling<br />
+								and I must go.”</h2>
+							<!-- 	<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
+								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+							</header> -->
+					<!-- 		<ul class="icons major">
+								<li><span class="icon fa-globe major style4"><span class="label">Lorem</span></span></li>
+								<li><span class="icon fa-photo major style4"><span class="label">Ipsum</span></span></li>
+								<li><span class="icon fa-camera major style4"><span class="label">Dolor</span></span></li>
+							</ul> -->
+						</div>
+					</section>
+
+				<!-- Two -->
+
+					<section id="two" class="wrapper alt">
+
+						
+					
+					{% for post in site.posts %}
+					
+					<a href="{{ post.url }}"
+						<section class="spotlight">
+							<div class="image"><img src="{{ post.photo_url }}" alt="" /></div>
+							<div class="content">
+								<h2>{{ post.title }}</h2>
+								
+							</div>
+						</section>
+					</a>
+
+					{% endfor %}
+						
+			
+					</section>
+
+				
+				<!-- CTA -->
+					<section id="cta" class="wrapper style4">
+						<div class="inner">
+							<header>
+								<h2>Sign Up</h2>
+								<p>Find out first when we publish a new post.</p>
+							</header>
+							<div class="actions vertical">
+								<li><a href="#" class="button fit special">Sign Up</a></li>
+								
+							</div>
+						</div>
+					</section>
